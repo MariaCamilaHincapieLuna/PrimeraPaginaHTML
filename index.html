@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Primer Sitio Web</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <header>
         <h1>HINCAPIE ART</h1>
 
-        <nav style="text-align: center;">
+        <nav>
             <a href="#"> HOME |</a>
             <a href="#about-us"> ABOUT US |</a>
             <a href="#gallery"> GALLERY |</a>
             <a href="#contact-us"> CONTACT US</a>
         </nav>
 
+        <img src="imgs/banner.jpg">
     </header>
 
     <main>
-        <img src="imgs/banner.jpg">
 
         <hr />
 
@@ -42,23 +43,23 @@
 
             <h2>GALLERY</h2>
 
-            <div style="display: flex;">
+            <div class="gallery">
 
-                <div>
+                <div class="card-painting">
                     <h3>Hermosa Pasión</h3>
                     <img src="imgs/img3.jpg">
                     <h4>Henry Hincapie</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sit modi neque minus exercitationem perspiciatis officiis soluta id repellendus quo!</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto esse, odio quisquam assumenda perspiciatis nesciunt voluptas ad a beatae dolor!</p>
                 </div>
 
-                <div>
+                <div class="card-painting">
                     <h3>Pensamientos Puros</h3>
                     <img src="imgs/img2.jpg">
                     <h4>Henry Hincapie</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque corporis voluptate harum ullam debitis tempore ad maxime, dolorum recusandae laborum?</p>
                 </div>
 
-                <div>
+                <div class="card-painting">
                     <h3>Espiritu Valiente</h3>
                     <img src="imgs/img4.jpg">
                     <h4>Henry Hincapie</h4>
@@ -79,23 +80,24 @@
             <h2>CONTACT US</h2>
             <form>
     
-                <div>
+                <div class="dato">
                     <label for="nombre">Nombre: </label>
                     <input type="text" name="nombre" placeholder="tu nombre">
                 </div>
     
-                <div>
+                <div class="dato">
                     <label for="apellido">Apellido: </label>
                     <input type="text" name="apellido" placeholder="tu apellido">
                 </div>
     
-                <div>
+                <div class="dato">
                     <label for="correo">Correo: </label>
                     <input type="email" name="correo" placeholder="nombre@correo.com">
                 </div>
     
-                <div>
-                    <label for="asunto">Mensaje: </label>
+                <div class="dato">
+                    <label for="asunto">Asunto: </label>
+                    <br>
                     <textarea name="asunto"></textarea>
                 </div>
     
